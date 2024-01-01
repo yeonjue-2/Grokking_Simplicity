@@ -6,7 +6,7 @@ ch.4 액션에서 계산 빼내기 p.82
 */
 
 
-// 이 코드에서 계산을 빼내기
+// 기본 함수
 function update_shipping_icons() {
   var buy_buttons = get_buy_buttons_dom();
   for(var i = 0; i < buy_buttons.length; i++) {
