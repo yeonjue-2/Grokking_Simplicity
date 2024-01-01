@@ -26,7 +26,7 @@ function update_shipping_icons() {
   for(var i = 0; i < buy_buttons.length; i++) {
     var button = buy_buttons[i];
     var item = button.item;
-    if(gets_free_shipping(item.price))  // *
+    if(gets_free_shipping(item.price))    // * 새로운 메서드
       button.show_free_shipping_icon();
     else
       button.hide_free_shipping_icon();
@@ -52,7 +52,7 @@ function update_shipping_icons() {
   }
 
 function gets_free_shipping(item_price) {
-  return item_price + shopping_cart_total >= 20; // * 전역변수를 읽는 암묵적 입력
+  return item_price + shopping_cart_total >= 20;   // * 전역변수를 읽는 암묵적 입력 shopping_cart_total
 }
 
 
@@ -70,5 +70,5 @@ function update_shipping_icons() {
   }
 
 function gets_free_shipping(item_price, total) {
-  return item_price + total >= 20; // * 전역변수를 인자로 받아 처리
+  return item_price + total >= 20;                // * 전역변수를 인자로 받아 처리
 }
