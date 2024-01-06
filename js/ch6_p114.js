@@ -82,7 +82,6 @@ function remove_item_by_name(cart, name) {
 
     if (idx !== null) {
         return removeItems(cart, idx, 1);
+    return cart;    // 값을 바꾸지 않은 경우 복사하지 않은 것을 그대로 씀
     }
-
-    return copy;    // 값을 바꾸지 않은 경우 복사하지 않은 것을 그대로 씀
 }
